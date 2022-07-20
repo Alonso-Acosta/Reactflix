@@ -2,7 +2,7 @@ import axios from "axios";
 import {Navigate } from 'react-router-dom';
 import { useEffect,useState } from "react";
 
-function Detalle(){
+function Detalle(props){
     let token = sessionStorage.getItem('token');
     //  para sesiones temporales 
     let query = new URLSearchParams(window.location.search);
@@ -31,6 +31,10 @@ function Detalle(){
             <div className="row">
                 <div className="col-3">
                 <img src={`https://image.tmdb.org/t/p/w500/${movieDate.poster_path}`} className="img-fluid" alt="movie-poster" />
+                <button className='favourite-btn'
+                                    onClick={props.addOrRemoveFavs}
+                                    data-movie-id={movieDate.id}
+                            >🖤</button>
                 </div>
                 <div className="col-8">
                     <h5>Fecha de estreno: {movieDate.release_date}</h5>

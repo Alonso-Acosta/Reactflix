@@ -2,8 +2,6 @@
 import Buscador from './Buscador';
 // Librerias
 import {Link} from 'react-router-dom';
-//Styles
-import '../Style/bootstrap.min.css';
 
 function Header(props){
     return(

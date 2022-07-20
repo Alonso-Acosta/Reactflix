@@ -3,8 +3,6 @@ import {useEffect, useState} from 'react';
 
 import swalert from '@sweetalert/with-react';
 import axios from 'axios';
-//Styles
-import '../Style/bootstrap.min.css';
 
 function Listado(props){
     //Version 1 de redireccion

@@ -7,9 +7,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Resultado from './components/Resultado';
 import Favoritos from './components/Favoritos';
-
+import Listado2 from "./components/Listado2";
 //Styles
-import './Style/bootstrap.min.css';
 import './Style/App.css';
 
 
@@ -68,7 +67,8 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Login />} />
         <Route path='/listado' element={<Listado addOrRemoveFavs={addOrRemoveFavs}/> } />
-        <Route path='/detalle' element={<Detalle />} />
+        <Route path='/listado2' element={<Listado2 addOrRemoveFavs={addOrRemoveFavs}/> } />
+        <Route path='/detalle' element={<Detalle addOrRemoveFavs={addOrRemoveFavs}/>} />
         <Route path='/resultado' element={<Resultado />} />
         <Route path='/favoritos' element={<Favoritos favorites={favorites} addOrRemoveFavs={addOrRemoveFavs} />} />
       </Routes>

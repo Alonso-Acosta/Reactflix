@@ -1,8 +1,6 @@
 import axios from 'axios';
 import swalert from '@sweetalert/with-react';
 import { useNavigate,Navigate } from 'react-router-dom';
-//Styles
-import '../Style/bootstrap.min.css';
 
 function Login(){
     const navigate = useNavigate();
